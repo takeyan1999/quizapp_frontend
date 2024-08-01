@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 const QuizHeader = () => {
     const navigate = useNavigate();
     const Gohome = () => {
-        navigate("/home");
+        navigate("/");
     };
 
     return (
