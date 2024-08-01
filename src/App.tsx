@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./css/style.css";
 
-const API_URL = "https://quizapp-backend-hy9l.onrender.com";
+const API_URL = "http://localhost:3000/quizlist";
 
 import QuizHeader from "./Shared/QuizHeader";
 import Quiz from "./Pages/Quiz";
