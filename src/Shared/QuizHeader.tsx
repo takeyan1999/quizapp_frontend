@@ -5,18 +5,24 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Image from "react-bootstrap/Image";
 import acount from "../images/acount.jpeg";
+import { useNavigate } from "react-router-dom";
 
 const QuizHeader = () => {
+    const navigate = useNavigate();
+    const Gohome = () => {
+        navigate("/home");
+    };
+
     return (
         <>
             <Navbar expand="lg" className="bg-body-tertiary">
                 <Container>
-                    <Navbar.Brand href="/home">みんなでクイズ合戦</Navbar.Brand>
+                    <Navbar.Brand onClick={Gohome}>みんなでクイズ合戦</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="/home">Home</Nav.Link>
-                            <Nav.Link href="/">theme</Nav.Link>
+                            <Nav.Link onClick={Gohome}>Home</Nav.Link>
+                            <Nav.Link onClick={Gohome}>theme</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                     <Navbar.Collapse className="justify-content-end">
